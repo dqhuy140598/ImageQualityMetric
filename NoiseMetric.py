@@ -93,7 +93,7 @@ class NoiseMetric:
         b_score = self.estimate_noise_channel(image[...,0])
         g_score = self.estimate_noise_channel(image[...,1])
         r_score = self.estimate_noise_channel(image[...,2])
-        average_noise_score = (b_score + g_score + r_score)/2
+        average_noise_score = (b_score + g_score + r_score)/3
         return average_noise_score
 
 
